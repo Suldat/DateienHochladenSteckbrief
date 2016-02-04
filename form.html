@@ -906,21 +906,35 @@ font-weight: bold;
 			<ul >
 			
 					<li id="li_1" >
-		<label class="description" for="element_1">Name </label>
+		<label class="description" for="myName">Vorname </label>
 		<div>
-			<input id="element_1" name="element_1" class="element text medium" type="text" maxlength="255" value=""/> 
+			<input type="text" name="myName" placeholder="Dein Vorname..."> 
 		</div> 
 		</li>		<li id="li_2" >
-		<label class="description" for="element_2">E-Mail Adresse. Bitte die angeben, die du auch beim 1. Steckbrief angegeben hast! </label>
+		<label class="description" for="mySurName">Nachname </label>
 		<div>
-			<input id="element_2" name="element_2" class="element text medium" type="text" maxlength="255" value=""/> 
+			<input type="text" name="mySurName" placeholder="Dein Nachname..."> 
+		</div> 
+		</li>		<li id="li_3" >
+		<label class="description" for="element_3">E-Mail Adresse. Bitte die angeben, die du auch beim 1. Steckbrief angegeben hast! </label>
+		<div>
+			<input type="email" name="myEmail" placeholder="Deine E-mail..">
+		</div> 
+		</li>		<li id="li_4" >
+		<label class="description" for="fotoFile">Dein Foto für dein Steckbrief</label>
+		<div>
+			<input type="file" name="fotoFile">
+		</div> 
+		</li>		<li id="li_5" >
+		<label class="description" for="kindheitsfotoFile">Dein Kindheitsfoto für dein Steckbrief </label>
+		<div>
+			<input type="file" name="kindheitsfotoFile">
 		</div> 
 		</li>
 			
 					<li class="buttons">
-			    <input type="hidden" name="form_id" value="1096589" />
-			    
-				<input id="saveForm" class="button_text" type="submit" name="submit" value="Submit" />
+				<input type="submit" id="uploadFile" value="Bilder hochladen!" 
+         onclick="this.value='Uploading..';uploadFile();">
 		</li>
 			</ul>
 		</form>	
