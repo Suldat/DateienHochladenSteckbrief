@@ -916,7 +916,7 @@ font-weight: bold;
 			<input type="text" name="mySurName" placeholder="Dein Nachname..."> 
 		</div> 
 		</li>		<li id="li_3" >
-		<label class="description" for="element_3">E-Mail Adresse. Bitte die angeben, die du auch beim 1. Steckbrief angegeben hast! </label>
+		<label class="description" for="myEmail">E-Mail Adresse. Bitte die angeben, die du auch beim 1. Steckbrief angegeben hast! </label>
 		<div>
 			<input type="email" name="myEmail" placeholder="Deine E-mail..">
 		</div> 
@@ -934,12 +934,14 @@ font-weight: bold;
 			
 					<li class="buttons">
 				<input type="submit" id="uploadFile" value="Bilder hochladen!" 
-         onclick="this.value='Uploading..';uploadFile();">
+         onclick="this.value='Lädt hoch...';uploadFile();">
 		</li>
 			</ul>
 		</form>	
 
 	</div>
+	<!-- Here the results of the form submission will be displayed -->
+	<div id="output"></div>
 	<img id="bottom" src="https://raw.githubusercontent.com/Suldat/DateienHochladenSteckbrief/master/bottom.png" alt="">
 	</body>
 </html>
