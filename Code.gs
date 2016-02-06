@@ -27,16 +27,16 @@ function uploadFiles(form) {
     
     
     /* Set the file description as the name of the uploader */
-    fileFoto.setDescription("Hochgeladen von " +form.myName +" " +form.mySurName);
+    fileFoto.setDescription("Hochgeladen von " +form.myName);
     var email = form.myEmail;
       
-    fileFoto.setName(form.myName +form.mySurName);
-    filekFoto.setName("kFoto_"+form.myName +form.mySurName);
+    fileFoto.setName(form.myName);
+    filekFoto.setName("kFoto_"+form.myName);
     
     /*Creates a Info.txt*/
-    folder.createFile("info.txt", "Vorname: "+form.myName +"\nNachname: " +form.mySurName +"\nLink zum Foto: " +fileFoto.getUrl() +"\nLink zum Kindheitsfoto: " +filekFoto.getUrl());
+    folder.createFile("info.txt", "Name: "+form.myName +"\nLink zum Foto: " +fileFoto.getUrl() +"\nLink zum Kindheitsfoto: " +filekFoto.getUrl());
     
-    /* Return the download URL of the file once its on Google Drive */
+    /* Return that the file was uploaded succesful */
     return "Die Bilder wurden erfolgreich hochgeladen!";
     
   } catch (error) {
