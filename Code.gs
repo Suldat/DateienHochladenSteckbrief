@@ -15,7 +15,7 @@ function uploadFiles(form) {
     //var folder = DriveApp.getFoldersByName("Steckbriefe_Bilder_26285").next(); AUSKOMMENTIERT
     var folder = DriveApp.getFolderById("0ByKa-hRU5ipiN3d6UklsUk0wb1k");
     
-    folder = folder.createFolder(form.myEmail +" " +form.myName +" " +form.mySurName);
+    folder = folder.createFolder(+form.myName +" " +form.myEmail);
     
     /* Get the file NO.1 uploaded though the form as a blob */
     var blob1 = form.fotoFile;    
